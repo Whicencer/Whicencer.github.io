@@ -6,6 +6,7 @@
 html, body {
     background-color: #e7f6ff;
     font-family: 'Inter', sans-serif;
+    font-size: .5vw;
 }
 li {
     list-style: none;
@@ -16,42 +17,45 @@ a {
 }
 .wrapper {
     background-color: #fff;
-    border-radius: 20px;
-    max-width: 1700px;
-    margin: 85px auto;
+    border-radius: 2em;
+    max-width: 170em;
+    width: 100%;
+    margin: 8.5em auto;
 }
 .container {
-    padding: 50px;
+    padding: 5em;
     margin: 0 auto;
-    max-width: 1550px;
+    max-width: 155.0em;
+    width: 100%;
 }
 .delimiter {
     background-color: #eaeaea;
-    height: 1px;
+    height: .1em;
 }
 
 /* Open Header */
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 50px;
+    padding: 5em;
+    width: 100%;
 
     &__logo {
         display: flex;
         align-items: center;
 
         div {
-            margin-left: 16px;
+            margin-left: 1.6em;
         }
     }
     
     h1 {
-        font-size: 20px;
+        font-size: 2em;
         font-weight: 800;
     }
     p {
         color: #9d9d9d;
-        font-size: 14px;
+        font-size: 1.4em;
     }
 }
 
@@ -61,17 +65,18 @@ a {
 
     div {
         cursor: pointer;
-        margin: 0 30px 0 0;
+        margin: 0 3em 0 0;
     }
 
     &__price {
         display: flex;
         align-items: center;
         svg {
-            width: 18px;
-            margin-right: 10px;
+            width: 1.8em;
+            margin-right: 1em;
         }
         span {
+            font-size: 1.6em;
             font-weight: 600;
             color: #5c5c5c;
         }
@@ -87,38 +92,42 @@ a {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin-top: 40px;
+        margin-top: 4em;
     }
     &__sale {
         display: flex;
         justify-content: center;
+
+        img {
+            width: 100%;
+        }
     }
     &__top {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin: 4em 0 0 0;
 
         h2 {
-            margin: 39px 0 0 0;
-            font-size: 32px;
+            font-size: 3.2rem;
             font-weight: 800;
         }
         
         .input-wrapper {
             display: flex;
             align-items: center;
-            border: 1px solid #F3F3F3;
-            border-radius: 10px;
-            padding: 10px;
+            border: .1em solid #F3F3F3;
+            border-radius: 1em;
+            padding: 1em;
 
             input {
                 outline: none;
                 font-family: 'Inter', sans-serif;
                 border: none;
-                border-radius: 10px;
-                font-size: 14px;
-                margin: 0 10px;
-                padding: 5px;
+                border-radius: 1em;
+                font-size: 1.4em;
+                margin: 0 1em;
+                padding: .5em;
                 &::placeholder {
                     color: #c4c4c4;
                 }
@@ -132,16 +141,16 @@ a {
 
 /* Open Sneaker-Block */
 .sneaker-block {
-    width: 210px;
-    border: 1px solid #f3f3f3;
-    border-radius: 40px;
-    padding: 8px 25px;
+    width: 21em;
+    border: .1em solid #f3f3f3;
+    border-radius: 4em;
+    padding: .8em 2.5em;
     transition: cubic-bezier(0.6, 0.04, 0.98, 0.335) .2s;
-    margin: 15px;
+    margin: 1.5em;
 
     &__title {
         font-family: 'Inter';
-        font-size: 14px;
+        font-size: 1.4em;
         color: #000;
 
         &:hover {
@@ -156,13 +165,13 @@ a {
             color: #bdbdbd;
             font-family: 'Inter';
             font-weight: 500;
-            font-size: 11px;
+            font-size: 1.1em;
             text-transform: uppercase;
         }
         span {
             font-family: 'Inter';
             font-weight: bold;
-            font-size: 14px;
+            font-size: 1.4em;
         }
     }
 
@@ -170,13 +179,13 @@ a {
         width: 100%;
     }
     div {
-        margin: 14px 0;
+        margin: 1.4em 0;
     }
 
 
     &:hover {
         transform: translateY(-7px);
-        box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.05);
+        box-shadow: 0px 1.4em 3em rgba(0, 0, 0, 0.05);
     }
 }
 /* Close Sneaker-Block */
@@ -185,12 +194,35 @@ a {
 
 /* Open Button */
 .button {
+    box-sizing: border-box;
     outline: none;
-    border: 1px solid #f2f2f2;
+    border: .1em solid #f2f2f2;
     background-color: #fff;
-    border-radius: 8px;
-    padding: 8px 10px;
+    border-radius: .8em;
+    padding: .8em 1em;
     cursor: pointer;
     color: #9d9d9d;
 }
 /* Close Button */
+
+
+
+
+
+/* Media */
+@media (max-width: 830px) {
+    .content__top {
+        display: block;
+
+        .input-wrapper {
+            margin-top: 20px;
+        }
+    }
+}
+@media (max-width: 655px) {
+    .header {
+        .cart {
+            visibility: hidden;
+        }
+    }
+}
