@@ -5,6 +5,7 @@
 }
 html, body {
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
@@ -61,11 +62,6 @@ a {
     &__item a {
         color: #2f281e;
         font-size: 14px;
-        border-bottom: 1px solid transparent;
-        transition: border cubic-bezier(0.55, 0.055, 0.675, 0.19) .2s;
-        &:hover {
-            border-bottom: 1px solid #2f281e;
-        }
     }
     &__item:not(:last-child) {
         margin-right: 20px;
@@ -116,6 +112,11 @@ a {
             background-position: bottom center;
             background-repeat: no-repeat;
         }
+    }
+    &__buttons {
+        display: inline-flex;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
     .button {
@@ -331,75 +332,62 @@ a {
     }
 }
 
-/* Strategies */
-.strategies {
-    margin-top: 35px;
-    padding-bottom: 120px;
+/* Blog */
+.blog {
+    &__inner {
+        padding: 120px 0;
+    }
     &__title {
         color: #2f281e;
-        font-weight: 700;
         font-size: 34px;
+        font-weight: 700;
+        margin-bottom: 7px;
     }
     &__subtitle {
+        color: #544837;
         font-size: 16px;
         font-weight: 500;
-        color: #544837;
-        line-height: 2;
+        margin-bottom: 50px;
     }
     &__items {
         display: flex;
-        align-items: center;
         justify-content: center;
-        padding-top: 50px;
-        padding-bottom: 53px;
+        flex-wrap: wrap;
     }
     &__item {
         max-width: 348px;
         cursor: pointer;
-        margin: 0 20px;
+        padding-bottom: 30px;
         &:hover {
-            .strategies__item-title {
+            .blog__item-title {
                 color: #ff9900;
             }
         }
-
-        &-image {
+        &:not(:last-child) {
+            margin-right: 26px;
+        }
+        &-img {
             margin-bottom: 12px;
+            img {width: 100%;}
         }
         &-info {
-            display: block;
             color: #544837;
             font-size: 16px;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
+        }
+        &-author {
+            color: inherit;
+            font-weight: 700;
         }
         &-title {
             color: #2f281e;
             font-size: 24px;
             font-weight: 700;
-            transition: cubic-bezier(0.165, 0.84, 0.44, 1) .2s;
-            margin-right: 40px;
-        }
-    }
-    &__slider {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        &-item {
-            background-color: #efefef;
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            cursor: pointer;
-
-            &:not(:last-child) {
-                margin-right: 10px;
-            }
-            &--active {
-                background-color: #ff9900;
-            }
+            transition: color .2s;
         }
     }
 }
+
 
 /* Footer */
 .footer {
@@ -412,6 +400,8 @@ a {
     }
     &__links {
         list-style: none;
+        margin-left: 40px;
+        margin-bottom: 25px;
     }
     &__link {
         display: inline-block;
@@ -422,11 +412,17 @@ a {
     &__sign {
         display: block;
         max-width: 329px;
+        margin-left: 40px;
         .button {
             display: block;
             font-size: 16px;
             font-weight: 700;
         }
+    }
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     &__text {
         padding-bottom: 15px;
@@ -449,7 +445,33 @@ a {
     }
 }
 
+/* burger */
+.menu__burger {
+    width: 30px;
+    height: 20px;
+    display: none;
 
-@media(max-width: 890px) {
-    
+    span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+        position: absolute;
+        left: 0;
+        top: 9px;
+    }
+    &::after, &::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: #000;
+        left: 0;
+    }
+    &::after {
+        bottom: 0;
+    }
+    &::before {
+        top: 0;
+    }
 }

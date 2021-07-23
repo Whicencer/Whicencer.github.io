@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1920, initial-scale=0.5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/media.css">
     <title>Productly</title>
 </head>
 <body>
@@ -16,11 +17,14 @@
             <div class="header__inner">
                 <img src="img/logo.svg" alt="logo" class="logo header__logo">
                 <nav class="menu header__menu">
+                    <div class="menu__burger">
+                        <span class="menu__burger-item"></span>
+                    </div>
                     <ul class="menu__list">
-                        <li class="menu__item"><a href="#">Product</a></li>
-                        <li class="menu__item"><a href="#">Customers</a></li>
-                        <li class="menu__item"><a href="#">Pricng</a></li>
-                        <li class="menu__item"><a href="#">Resources</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">Product</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">Customers</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">Pricng</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">Resources</a></li>
                     </ul>
                 </nav>
                 <div class="user-nav">
@@ -47,7 +51,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
         <section class="features">
             <div class="features__inner">
                 <div class="container">
@@ -106,7 +110,7 @@
                 </div>
             </div>
         </section>
-        <section class="section section">
+        <section class="section">
             <div class="container">
                 <div class="section__inner">
                     <div class="section__column">
@@ -184,31 +188,40 @@
                 </div>
             </div>
         </section>
-        <section class="strategies">
+        <section class="blog">
             <div class="container">
-                <h2 class="strategies__title">Marketing Strategies</h2>
-                <h5 class="strategies__subtitle">Join 40,000+ other marketers and get proven strategies on email marketing</h5>
-                <div class="strategies__items">
-                    <div class="strategies__item">
-                        <img src="img/strategies-img.svg" alt="strategies-image" class="strategies__item-image">
-                        <span class="strategies__item-info">By <b>Abdullah</b> | 03 March 2019</span>
-                        <h2 class="strategies__item-title">Increasing Prosperity With Positive Thinking</h2>
+                <div class="blog__inner">
+                    <h2 class="blog__title">Marketing Strategies</h2>
+                    <p class="blog__subtitle">Join 40,000+ other marketers and get proven strategies on email marketing</p>
+                    <div class="blog__items">
+                        <div class="blog__item">
+                            <div class="blog__item-img">
+                                <img src="img/strategies-img.svg" alt="blog-img">
+                            </div>
+                            <div class="blog__item-info">
+                                By <a href="#" class="blog__item-author">Abdullah</a> | 03 March 2019
+                            </div>
+                            <h2 class="blog__item-title">Increasing Prosperity With Positive Thinking</h2>
+                        </div>
+                        <div class="blog__item">
+                            <div class="blog__item-img">
+                                <img src="img/strategies-img2.svg" alt="blog-img">
+                            </div>
+                            <div class="blog__item-info">
+                                By <a href="#" class="blog__item-author">Abdullah</a> | 03 March 2019
+                            </div>
+                            <h2 class="blog__item-title">Increasing Prosperity With Positive Thinking</h2>
+                        </div>
+                        <div class="blog__item">
+                            <div class="blog__item-img">
+                                <img src="img/strategies-img3.svg" alt="blog-img">
+                            </div>
+                            <div class="blog__item-info">
+                                By <a href="#" class="blog__item-author">Abdullah</a> | 03 March 2019
+                            </div>
+                            <h2 class="blog__item-title">Increasing Prosperity With Positive Thinking</h2>
+                        </div>
                     </div>
-                    <div class="strategies__item">
-                        <img src="img/strategies-img2.svg" alt="strategies-image" class="strategies__item-image">
-                        <span class="strategies__item-info">By <b>Abdullah</b> | 03 March 2019</span>
-                        <h2 class="strategies__item-title">Motivation Is The First Step To Success</h2>
-                    </div>
-                    <div class="strategies__item">
-                        <img src="img/strategies-img3.svg" alt="strategies-image" class="strategies__item-image">
-                        <div class="strategies__item-info">By <b>Abdullah</b> | 03 March 2019</div>
-                        <h2 class="strategies__item-title">Success Steps For Your Personal Or Business Life</h2>
-                    </div>
-                </div>
-                <div class="strategies__slider">
-                    <span class="strategies__slider-item"></span>
-                    <span class="strategies__slider-item strategies__slider-item--active"></span>
-                    <span class="strategies__slider-item"></span>
                 </div>
             </div>
         </section>
@@ -217,25 +230,30 @@
         <div class="container">
             <div class="footer__inner">
                 <img src="img/logo.svg" alt="logo" class="logo footer__logo">
-                <ul class="footer__links">
-                    <li><a href="#" class="footer__link">About Us</a></li>
-                    <li><a href="#" class="footer__link">Blog</a></li>
-                    <li><a href="#" class="footer__link">Contact</a></li>
-                    <li><a href="#" class="footer__link">FAQ</a></li>
-                </ul>
-                <ul class="footer__links">
-                    <li><a href="#" class="footer__link">Disclaimer</a></li>
-                    <li><a href="#" class="footer__link">Financing</a></li>
-                    <li><a href="#" class="footer__link">Privacy Policy</a></li>
-                    <li><a href="#" class="footer__link">Terms of Service</a></li>
-                </ul>
-                <div class="footer__sign">
-                    <p class="footer__text">knowing you're always on the best energy deal.</p>
-                    <input type="tel" class="footer__input" placeholder="Enter your phone number">
-                    <button class="button button--orange">Sign up Now</button>
+                <div class="footer__content">
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">About Us</a></li>
+                        <li><a href="#" class="footer__link">Blog</a></li>
+                        <li><a href="#" class="footer__link">Contact</a></li>
+                        <li><a href="#" class="footer__link">FAQ</a></li>
+                    </ul>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Disclaimer</a></li>
+                        <li><a href="#" class="footer__link">Financing</a></li>
+                        <li><a href="#" class="footer__link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer__link">Terms of Service</a></li>
+                    </ul>
+                    <div class="footer__sign">
+                        <p class="footer__text">knowing you're always on the best energy deal.</p>
+                        <input type="tel" class="footer__input" placeholder="Enter your phone number">
+                        <button class="button button--orange">Sign up Now</button>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>

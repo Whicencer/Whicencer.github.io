@@ -1,0 +1,124 @@
+@media(max-width: 814px) {
+    .header__inner {
+        flex-wrap: wrap;
+        height: auto;
+        padding-top: 25px;
+    }
+    .menu {
+        order: 1;
+        width: 100%;
+    }
+    .menu__list {
+        justify-content: flex-end;
+        padding-top: 30px;
+    }
+}
+
+@media(max-width: 885px) {
+    .footer__inner {
+        display: block;
+    }
+}
+
+@media(max-width: 484px) {
+    .header__inner {
+        display: block;
+    }
+    .menu__list {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        text-align: center;
+        transform: translateX(300%);
+        transition: all .5s;
+    }
+    .menu__list--active {
+        transform: translateX(0);
+        transition: all .5s;
+    }
+    .menu__item-link {
+        display: block;
+        padding: 10px 0;
+    }
+    .menu__burger {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 28px;
+    }
+    .user-nav {
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 30px;
+    }
+    .hero__title {
+        font-size: 32px;
+    }
+    .features__title {
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 372px) {
+    .hero__content {
+        text-align: center;
+    }
+    .hero__buttons {
+        justify-content: center;
+    }
+    .hero__buttons .button {
+        margin-bottom: 20px;
+    }
+    .hero__title {
+        font-size: 28px;
+    }
+    .blog__item-title {
+        font-size: 19px;
+    }
+}
+
+@media(max-width: 529px) {
+    .section__inner {
+        display: block;
+        text-align: center;
+        margin-left: auto;
+    }
+    .section__subtitle {
+        font-size: 28px;
+    }
+    .section__column:last-child {
+        padding: 0;
+    }
+    .blog__inner {
+        text-align: center;
+    }
+}
+
+@media(max-width: 1000px) {
+    .hero {
+        padding: 80px 0 60px;
+    }
+    .hero__column img {
+        display: none;
+    }
+    .section__column img {
+        display: none;
+    }
+    .features__items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .features__item {
+        text-align: center;
+        max-width: 370px;
+    }
+}
+@media(max-width: 1440px) {
+    .team__item {
+        display: none;
+    }
+}
