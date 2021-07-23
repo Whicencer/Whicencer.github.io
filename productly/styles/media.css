@@ -31,11 +31,11 @@
         right: 0;
         background-color: #fff;
         text-align: center;
-        transform: translateX(300%);
+        transform: translateY(-300%);
         transition: all .5s;
     }
     .menu__list--active {
-        transform: translateX(0);
+        transform: translateY(0);
         transition: all .5s;
     }
     .menu__item-link {
