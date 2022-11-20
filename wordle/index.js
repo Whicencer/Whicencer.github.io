@@ -73,20 +73,21 @@ function getBgColor () {
 }
 
 function keyPressHandler (event) {
+  const key = event.key.toLowerCase();
   currentAttempt = currentAttempt.substring(0, 5);
-  if (alphabetKeys.includes(event.key)) {
-    currentAttempt += event.key.toLowerCase();
+  if (alphabetKeys.includes(key)) {
+    currentAttempt += key.toLowerCase();
     
     if (currentAttempt.length > 5) return;
     updateGrid(currentAttempt.length-1, currentAttempt[currentAttempt.length-1]);
   }
 
-  if (event.key === 'Backspace') {
+  if (key === 'backspace') {
     currentAttempt = currentAttempt.substring(0, currentAttempt.length-1);
     updateGrid(currentAttempt.length, '');
   }
 
-  if (event.key === 'Enter') {
+  if (key === 'enter') {
     if (currentAttempt.length < 5) alert('Not enough letters');
     if (currentAttempt === currentWord) {
       gameEnd(true);
