@@ -64,10 +64,10 @@ function getBgColor () {
     if (!currentWord.split('').includes(attemptLetter)) {
       currentCellEl.style.backgroundColor = '#404040';
     } else {
-      currentCellEl.style.backgroundColor = 'yellow';
+      currentCellEl.style.backgroundColor = '#cdcc1d';
     }
     if (correctLetter === attemptLetter) {
-      currentCellEl.style.backgroundColor = 'green';
+      currentCellEl.style.backgroundColor = '#4dc72a';
     }
   }
 }
