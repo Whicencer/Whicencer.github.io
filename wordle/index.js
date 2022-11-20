@@ -96,7 +96,7 @@ function keyPressHandler (event) {
       alert('This word does not exist in the dictionary');
       currentRow = currentRow;
     } else {
-      if (currentRow >= 4) {
+      if (currentRow >= 4 && currentAttempt !== currentWord) {
         gameEnd(false);
       } else {
         getBgColor();
