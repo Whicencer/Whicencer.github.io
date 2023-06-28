@@ -30,13 +30,9 @@ button {
   border-radius: 10px;
   outline: none;
   padding: 10px 20px;
-  color: #FBF4FF;
-  background-color: #5AC8FB;
+  color: var(--tg-theme-button-text-color);
+  background-color: var(--tg-theme-button-color);
   transition: .2s;
-}
-
-button:hover {
-  background-color: #5abdfb;
 }
 
 img {
