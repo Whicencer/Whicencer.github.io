@@ -36,7 +36,7 @@ button {
 }
 
 button:hover {
-	background-color: rgba(var(--tg-theme-button-color), 0.8);
+	background-color: #2481cc;
 }
 
 img {
