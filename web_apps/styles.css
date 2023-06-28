@@ -43,5 +43,6 @@ img {
   display: flex;
   flex-direction: column;
   margin: 20px;
-  background-color: var(--tg-theme-secondary-bg-color);
+	padding: 15px;
+	background-color: var(--tg-theme-secondary-bg-color);
 }
