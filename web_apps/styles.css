@@ -50,5 +50,5 @@ img {
 }
 
 a {
-  color: var(--tg-theme-link-color)
+  color: var(--tg-theme-link-color);
 }
