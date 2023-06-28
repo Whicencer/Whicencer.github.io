@@ -48,3 +48,8 @@ img {
 	border: 1px solid #cbcbcb;
 	background-color: var(--tg-theme-secondary-bg-color);
 }
+
+a {
+  color: var(--tg-theme-link-color);
+  font-size: 14px;
+}
