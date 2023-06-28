@@ -50,6 +50,7 @@ img {
 }
 
 a {
-  color: var(--tg-theme-link-color);
+  font: 500;
   font-size: 12px;
+  color: var(--tg-theme-link-color);
 }
