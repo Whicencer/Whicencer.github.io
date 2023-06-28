@@ -43,5 +43,5 @@ img {
   display: flex;
   flex-direction: column;
   margin: 20px;
-	background-color: var(--tg-theme-secondary-bg-color);
+  background-color: var(--tg-theme-secondary-bg-color);
 }
