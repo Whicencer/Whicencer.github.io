@@ -43,8 +43,8 @@ img {
   display: flex;
   flex-direction: column;
   margin: 20px;
-  padding: 15px;
-  border-radius: 15px;
-  border: 1px solid #cbcbcb;
-  background-color: var(--tg-theme-secondary-bg-color);
+	padding: 15px;
+	border-radius: 15px;
+	border: 1px solid #cbcbcb;
+	background-color: var(--tg-theme-secondary-bg-color);
 }
