@@ -35,10 +35,6 @@ button {
   transition: .2s;
 }
 
-button:hover {
-	background-color: #2481cc;
-}
-
 img {
   width: 40px;
 }
@@ -47,4 +43,5 @@ img {
   display: flex;
   flex-direction: column;
   margin: 20px;
+	background-color: var(--tg-theme-secondary-bg-color);
 }
