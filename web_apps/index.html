@@ -17,9 +17,9 @@
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
 	<script>
 		const tg = window.Telegram.WebApp;
-		const buyButton = document.querySelector("button[data-id='month-access']");
-		
 		tg.expand();
+
+		const buyButton = document.querySelector('button[data-id="month-access"]');
 		buyButton.addEventListener("click", () => {
 			tg.sendData('Поздравляю, ты только что оплатил месячный доступ к курсу!')
 		});
