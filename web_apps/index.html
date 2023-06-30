@@ -44,7 +44,7 @@
 		mainButton.disable();
 		mainButton.show();
 
-		allSubs = [];
+		const allSubs = [];
 
 		subscriptions.forEach(sub => {
 			allSubs.push();
@@ -54,7 +54,7 @@
 		});
 		
 		mainButton.onClick(() => {
-			currentSub = allSubs;
+			const currentSub = allSubs;
 			tg.sendData(`Поздравляю с приобретением подписки ${currentSub}`);
 			tg.close();
 		});
