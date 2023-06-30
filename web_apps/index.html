@@ -24,7 +24,7 @@
 		mainButton.enable();
 		mainButton.show();
 
-		mainButton.onClick(() => {
+		mainButton.offClick(() => {
 			tg.sendData('Поздравляю, ты только что оплатил месячный доступ к курсу!');
 			tg.close();
 		});
