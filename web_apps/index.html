@@ -54,8 +54,8 @@
 		});
 		
 		mainButton.onClick(() => {
-			const currentSub = allSubs;
-			tg.sendData(`Поздравляю с приобретением подписки ${currentSub}`);
+			console.log(allSubs);
+			tg.sendData(`Поздравляю с приобретением подписки ${allSubs}`);
 			tg.close();
 		});
 	</script>
