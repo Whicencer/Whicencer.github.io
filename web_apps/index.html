@@ -54,7 +54,7 @@
 		});
 		
 		mainButton.onClick(() => {
-			currentSub = allSubs.filter(sub => sub.checked);
+			currentSub = allSubs;
 			tg.sendData(`Поздравляю с приобретением подписки ${currentSub}`);
 			tg.close();
 		});
