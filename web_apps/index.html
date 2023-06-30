@@ -18,12 +18,12 @@
 	<script>
 		const tg = window.Telegram.WebApp;
 		// const buyButton = document.querySelector("button[data-id='month-access']");
-		const mainButton = window.Telegram.WebApp.MainButton;
+		const mainButton = tg.MainButton;
+		tg.expand();
 		mainButton.text = "Buy course";
 		mainButton.enable();
 		mainButton.show();
 
-		tg.expand();
 		mainButton.onEvent('mainButtonClicked', () => {
 			tg.sendData('Поздравляю, ты только что оплатил месячный доступ к курсу!');
 			tg.close();
