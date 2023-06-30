@@ -54,3 +54,23 @@ a {
   font-size: 13px;
   color: var(--tg-theme-link-color);
 }
+
+.sub input {
+  transform: scale(1.5);
+}
+.sub_level {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.sub label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 12px;
+}
+.sub label span {
+  color: var(--tg-theme-hint-color);
+  font-size: 13px;
+  font-weight: 600;
+}
