@@ -44,14 +44,18 @@
 		mainButton.disable();
 		mainButton.show();
 
-		subscriptions.forEach(subCheckbox => {
-			subCheckbox.addEventListener("change", () => {
+		allSubs = [];
+
+		subscriptions.forEach(sub => {
+			allSubs.push();
+			sub.addEventListener("change", () => {
 				mainButton.enable();
 			});
 		});
-
+		
+		currentSub = allSubs.filter(sub => sub.checked)[0];
 		mainButton.onClick(() => {
-			tg.sendData('Поздравляю, ты только что оплатил месячный доступ к курсу!');
+			tg.sendData(`Поздравляю с приобретением подписки ${currentSub}`);
 			tg.close();
 		});
 	</script>
