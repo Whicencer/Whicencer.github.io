@@ -25,10 +25,9 @@
 
 		tg.expand();
 		mainButton.onEvent('mainButtonClicked', () => {
-			tg.sendData('Поздравляю, ты только что оплатил месячный доступ к курсу!')
+			tg.sendData('Поздравляю, ты только что оплатил месячный доступ к курсу!');
+			tg.close();
 		});
-
-		tg.close();
 	</script>
 </body>
 </html>
