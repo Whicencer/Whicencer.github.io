@@ -15,7 +15,7 @@
 	<div class="sub">
 		<!-- Month -->
 		<div class="sub_level">
-			<input id="month" type="checkbox" value="month">
+			<input type="radio" name="sub" id="month">
 			<label for="month">
 				Basic subscription
 				<span class="sub_span">$14.99/month</span>
@@ -24,7 +24,7 @@
 		
 		<!-- Year -->
 		<div class="sub_level">
-			<input id="year" type="checkbox" value="year">
+			<input type="radio" name="sub" id="year">
 			<label for="year">
 				Pro subscription
 				<span class="sub_span">$139.99/year</span>
@@ -45,9 +45,9 @@
 		mainButton.show();
 
 		subscriptions.forEach(subCheckbox => {
-			subCheckbox.addEventListener('change', () => {
+			subCheckbox.addEventListener("change", () => {
 				mainButton.enable();
-			})
+			});
 		});
 
 		mainButton.onClick(() => {
