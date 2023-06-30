@@ -24,7 +24,7 @@
 		mainButton.show();
 
 		tg.expand();
-		window.Telegram.WebApp.onEvent('mainButtonClicked', () => {
+		mainButton.onEvent('mainButtonClicked', () => {
 			tg.sendData('Поздравляю, ты только что оплатил месячный доступ к курсу!')
 		});
 
