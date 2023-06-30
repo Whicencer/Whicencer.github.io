@@ -53,8 +53,8 @@
 			});
 		});
 		
-		currentSub = allSubs.filter(sub => sub.checked)[0];
 		mainButton.onClick(() => {
+			currentSub = allSubs.filter(sub => sub.checked);
 			tg.sendData(`Поздравляю с приобретением подписки ${currentSub}`);
 			tg.close();
 		});
