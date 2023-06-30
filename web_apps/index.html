@@ -55,7 +55,7 @@
 		
 		mainButton.onClick(() => {
 			console.log(allSubs);
-			tg.sendData(`Поздравляю с приобретением подписки ${allSubs}`);
+			tg.sendData(`Поздравляю с приобретением подписки ${JSON.stringify(allSubs)}`);
 			tg.close();
 		});
 	</script>
