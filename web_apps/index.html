@@ -37,7 +37,7 @@
 	<script>
 		const tg = window.Telegram.WebApp;
 		const subscriptions = document.querySelectorAll('.sub_level');
-		const allSubs = [];
+		let currentSub = null;
 		// const buyButton = document.querySelector("button[data-id='month-access']");
 		tg.expand();
 		const mainButton = tg.MainButton;
@@ -45,17 +45,17 @@
 		mainButton.disable();
 		mainButton.show();
 
-
 		subscriptions.forEach(sub => {
 			allSubs.push();
 			sub.addEventListener("change", () => {
+				currentSub = sub.querySelector("input").id;
 				mainButton.enable();
 			});
 		});
 		
 		mainButton.onClick(() => {
 			console.log(allSubs);
-			tg.sendData(`Поздравляю с приобретением подписки ${JSON.stringify(allSubs)}`);
+			tg.sendData(`Поздравляю с приобретением подписки ${currentSub}`);
 			tg.close();
 		});
 	</script>
