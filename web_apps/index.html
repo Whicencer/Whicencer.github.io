@@ -46,7 +46,6 @@
 		mainButton.show();
 
 		subscriptions.forEach(sub => {
-			allSubs.push();
 			sub.addEventListener("change", () => {
 				currentSub = sub.querySelector("input").id;
 				mainButton.enable();
@@ -54,7 +53,6 @@
 		});
 		
 		mainButton.onClick(() => {
-			console.log(allSubs);
 			tg.sendData(`Поздравляю с приобретением подписки ${currentSub}`);
 			tg.close();
 		});
