@@ -31,31 +31,9 @@
 			</label>
 		</div>
 	</div>
-	<!-- <button data-id="month-access">Buy for $14.99</button> -->
 
+	
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
-	<script>
-		const tg = window.Telegram.WebApp;
-		const subscriptions = document.querySelectorAll('.sub_level');
-		let currentSub = null;
-		// const buyButton = document.querySelector("button[data-id='month-access']");
-		tg.expand();
-		const mainButton = tg.MainButton;
-		mainButton.text = "Buy course";
-		mainButton.disable();
-		mainButton.show();
-
-		subscriptions.forEach(sub => {
-			sub.addEventListener("change", () => {
-				currentSub = sub.querySelector("input").id;
-				mainButton.enable();
-			});
-		});
-		
-		mainButton.onClick(() => {
-			tg.sendData(`Поздравляю с приобретением подписки ${currentSub}`);
-			tg.close();
-		});
-	</script>
+	<script src="./main.js"></script>
 </body>
 </html>
