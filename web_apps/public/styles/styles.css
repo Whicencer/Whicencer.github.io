@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   padding: 10px;
   font-family: 'Poppins', 'Montserrat', sans-serif;
   background-color: #fff;
