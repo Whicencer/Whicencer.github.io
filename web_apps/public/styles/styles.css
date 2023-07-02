@@ -9,8 +9,6 @@
 body {
   padding: 10px;
   font-family: 'Poppins', 'Montserrat', sans-serif;
-  color: var(--tg-theme-text-color);
-  background-color: var(--tg-theme-bg-color);
 }
 
 .logo {
@@ -55,16 +53,9 @@ body {
   margin: 0;
 }
 
-.banners {
-  display: flex;
-  overflow-x: auto;
-}
 .banner {
   display: block;
   margin-right: auto;
-  margin-left: 8px;
-}
-.banner:first-child {
   margin-left: auto;
 }
 
