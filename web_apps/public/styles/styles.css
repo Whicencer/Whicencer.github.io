@@ -57,7 +57,7 @@ html, body {
 
 .banner {
   display: block;
-  margin-right: auto;
+  margin-right: 10px;
   margin-left: auto;
 }
 
@@ -71,7 +71,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 185px;
+  width: 180px;
   background-color: #f5f5f5;
   padding: 15px 20px;
   border-radius: 15px;
@@ -79,7 +79,7 @@ html, body {
   cursor: pointer;
 }
 .product_card img {
-  width: 120px;
+  width: 100px;
 }
 .product_info {
   width: 100%;
