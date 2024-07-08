@@ -1,5 +1,5 @@
 {
-  "url": "https://dotonate.me/",                        // required
-  "name": "Dotonate",                      // required
-  "iconUrl": "https://dotonate.me/images/logo.png",               // required
+  "url": "https://dotonate.me/",
+  "name": "Dotonate",
+  "iconUrl": "https://dotonate.me/images/logo.png"
 }
